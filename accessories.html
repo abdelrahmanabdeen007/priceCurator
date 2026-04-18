@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories Listing - PriceCurator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Accessories Listing</h1>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/accessories">Accessories</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="filters">
+            <h2>Filters</h2>
+            <form id="filterForm">
+                <label>
+                    Category:
+                    <select name="category" id="category">
+                        <option value="all">All</option>
+                        <option value="jewelry">Jewelry</option>
+                        <option value="bags">Bags</option>
+                        <option value="hats">Hats</option>
+                    </select>
+                </label>
+                <label>
+                    Price Range:
+                    <input type="range" min="0" max="1000" value="1000" id="priceRange"/>
+                </label>
+                <button type="submit">Apply Filters</button>
+            </form>
+        </section>
+        <section class="sorting">
+            <h2>Sort By</h2>
+            <select id="sortBy">
+                <option value="popular">Most Popular</option>
+                <option value="price_low_high">Price: Low to High</option>
+                <option value="price_high_low">Price: High to Low</option>
+            </select>
+        </section>
+        <section class="product-grid">
+            <div class="product">
+                <h3>Product 1</h3>
+                <p>Price: $100</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Product 2</h3>
+                <p>Price: $200</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Product 3</h3>
+                <p>Price: $150</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Product 4</h3>
+                <p>Price: $80</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- More products can be added here -->
+        </section>
+        <section class="pagination">
+            <button class="prev">Previous</button>
+            <span>Page 1 of 10</span>
+            <button class="next">Next</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 PriceCurator. All rights reserved.</p>
+    </footer>
+</body>
+</html>
