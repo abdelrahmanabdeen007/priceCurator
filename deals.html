@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals Listing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Deals Listing</h1>
+        <input type="text" id="search" placeholder="Search deals...">
+    </header>
+    <nav>
+        <h2>Filters</h2>
+        <div>
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home">Home</option>
+            </select>
+        </div>
+        <div>
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="priceAsc">Price: Low to High</option>
+                <option value="priceDesc">Price: High to Low</option>
+                <option value="newest">Newest First</option>
+            </select>
+        </div>
+    </nav>
+    <main>
+        <section id="deals">
+            <div class="deal-card">
+                <img src="deal-image.jpg" alt="Deal Image">
+                <h3>Deal Title</h3>
+                <p class="price">$99.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Repeat for more deal cards -->
+        </section>
+        <footer>
+            <button id="prev-page">Previous</button>
+            <button id="next-page">Next</button>
+        </footer>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
